@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Komali Bommu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-wrapper">
+
+        <a href="index.html" class="logo">
+            Komali<span>.</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html" class="active">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div>
+
+            <span>04 / CONTACT</span>
+
+            <h1>
+                Let's <em>connect.</em>
+            </h1>
+
+            <p>
+                Have an opportunity, project or idea?
+                I'd love to hear from you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact-section">
+
+        <div class="contact-intro">
+
+            <span class="section-label">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                Start a<br>
+                conversation.
+            </h2>
+
+            <p>
+                Whether it's an internship opportunity,
+                collaboration or simply connecting,
+                feel free to reach out.
+            </p>
+
+        </div>
+
+
+        <div class="contact-links">
+
+
+            <a href="mailto:bommukomali7@gmail.com"
+                class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <div>
+
+                    <span>EMAIL</span>
+
+                    <h3>
+                        bommukomali7@gmail.com
+                    </h3>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/komali-bommu405560253/"
+                target="_blank"
+                class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <div>
+
+                    <span>LINKEDIN</span>
+
+                    <h3>
+                        Komali Bommu
+                    </h3>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <a href="https://github.com/komali2809"
+                target="_blank"
+                class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+                <div>
+
+                    <span>GITHUB</span>
+
+                    <h3>
+                        github.com/komali2809
+                    </h3>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-top">
+
+        <div>
+
+            <a href="index.html" class="logo">
+                Komali<span>.</span>
+            </a>
+
+            <p>Building. Learning. Growing.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="resume.html">Resume</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Komali Bommu</p>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", () => {
+
+    navMenu.classList.toggle("open");
+
+    const icon = menuBtn.querySelector("i");
+
+    icon.className =
+        navMenu.classList.contains("open")
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+
+});
+
+</script>
+
+</body>
+</html>
+

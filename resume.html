@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume | Komali Bommu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-wrapper">
+
+        <a href="index.html" class="logo">
+            Komali<span>.</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="resume.html" class="active">Resume</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero resume-hero">
+
+        <div>
+
+            <span>03 / RESUME</span>
+
+            <h1>
+                My <em>resume.</em>
+            </h1>
+
+            <p>
+                Education, skills, projects and experience
+                in one place.
+            </p>
+
+            <a href="23b01a4221_komalibommu (9).pdf" download class="btn btn-primary">
+
+                Download Resume
+
+                <i class="fa-solid fa-download"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="resume-info">
+
+        <div class="resume-card">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <h2>
+                Interested in my profile?
+            </h2>
+
+            <p>
+                Download my latest resume for a detailed overview
+                of my education, technical skills, projects and
+                experience.
+            </p>
+
+            <a href="23b01a4221_komalibommu (9).pdf" download class="btn btn-primary">
+
+                Download PDF
+
+                <i class="fa-solid fa-download"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-top">
+
+        <div>
+
+            <a href="index.html" class="logo">
+                Komali<span>.</span>
+            </a>
+
+            <p>Building. Learning. Growing.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Komali Bommu</p>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", () => {
+
+    navMenu.classList.toggle("open");
+
+    const icon = menuBtn.querySelector("i");
+
+    icon.className =
+        navMenu.classList.contains("open")
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+
+});
+
+</script>
+
+</body>
+</html>
+
